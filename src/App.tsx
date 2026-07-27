@@ -110,9 +110,9 @@ function App() {
               width={app.id === 'bugle' ? 550 : app.id === 'radio' ? 440 : 450}
               height={app.id === 'bugle' ? 700 : app.id === 'radio' ? 400 : 350}
             >
-              <div className="flex-1 p-2 h-full w-full">
+              <div className="flex-1 p-2 w-full flex flex-col min-h-0">
                 {app.id === 'terminal' && (
-                  <div className="font-oswald text-lg leading-relaxed h-full p-4 tracking-wide text-black bg-white/90 overflow-y-auto">
+                  <div className="font-oswald text-lg leading-relaxed flex-1 p-4 tracking-wide text-black bg-white/90 overflow-y-auto">
                     <h2 className="text-2xl font-bold mb-4 border-b-2 border-black pb-2">ABOUT SYSTEM</h2>
                     <div className="space-y-2">
                       <p><span className="font-bold text-gray-500">USER:</span> <span className="bg-[#FFD700] px-2 text-black">{userName ? userName.toUpperCase() : 'GUEST'}</span></p>

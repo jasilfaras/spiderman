@@ -103,7 +103,7 @@ export const DataCard: React.FC<DataCardProps> = ({
           </button>
         </div>
 
-        <div className="relative z-10 flex-1 font-oswald text-lg">
+        <div className="relative z-10 flex-1 font-oswald text-lg flex flex-col min-h-0">
           {children}
         </div>
       </div>
