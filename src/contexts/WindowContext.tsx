@@ -29,7 +29,7 @@ const WindowContext = createContext<WindowContextType | undefined>(undefined);
 
 export const WindowProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [windows, setWindows] = useState<AppWindow[]>(INITIAL_WINDOWS);
-  const [maxZIndex, setMaxZIndex] = useState(30);
+  const [, setMaxZIndex] = useState(30);
 
   const openWindow = useCallback((id: string) => {
     setMaxZIndex(prev => {

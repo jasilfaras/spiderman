@@ -1,8 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Play, Pause, SkipForward, SkipBack, Volume2, VolumeX } from 'lucide-react';
 import { cn } from '../lib/utils';
-import { WindowContainer } from '../components/WindowContainer';
 
 export interface AudioTrack {
   id: string;
@@ -54,7 +53,7 @@ function useScrambleText(text: string, isActive: boolean) {
     let animationFrame: number;
     
     const animate = () => {
-      setDisplayText(text.split("").map((char, index) => {
+      setDisplayText(text.split("").map((_, index) => {
         if(index < iteration) {
           return text[index];
         }

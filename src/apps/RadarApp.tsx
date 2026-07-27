@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { WindowContainer } from '../components/WindowContainer';
-import { MapPin, AlertCircle } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 import { cn } from '../lib/utils';
 
 const THREATS = [

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { WindowContainer } from '../components/WindowContainer';
-import { Camera, AlertTriangle } from 'lucide-react';
+
+import { Camera } from 'lucide-react';
 import { cn } from '../lib/utils';
 
 const FEEDS = [

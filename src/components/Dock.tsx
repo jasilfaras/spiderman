@@ -1,11 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const SvgLightning = ({ className }: { className?: string }) => (
-  <svg viewBox="0 0 100 100" className={className} overflow="visible" fill="none" stroke="currentColor" strokeWidth="6" strokeLinecap="square" strokeLinejoin="miter">
-    <path d="M55 5 L15 50 L45 55 L35 95 L85 40 L50 35 Z" fill="currentColor" />
-  </svg>
-);
 
 const SvgSpiderSense = ({ className }: { className?: string }) => (
   <svg viewBox="0 0 100 100" className={className} overflow="visible" fill="none" stroke="currentColor" strokeWidth="10" strokeLinecap="square" strokeLinejoin="miter">
